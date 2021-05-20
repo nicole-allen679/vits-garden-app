@@ -6,7 +6,7 @@ function Users() {
   const [newUser, setNewUser] = useState({})
 
   useEffect(() => {
-    fetch('http://3.141.105.146:5000/users')
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}/users`)
       .then((response) => response.json())
       .then((data) => setAllUsers(data))
       .catch((err) => console.log('This is error', err))
@@ -15,7 +15,7 @@ function Users() {
   console.log(newUser)
 
   function createUser() {
-    fetch('http://3.141.105.146:5000/signup', {
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}/signup`, {
       method: 'Post',
       headers: {
         Accept: 'application/json',

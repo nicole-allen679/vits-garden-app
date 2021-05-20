@@ -14,7 +14,7 @@ function Footer(){
           <div className="footer-copyright" >
             <div className="container">
             © 2014 Copyright Text
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a className="grey-text text-lighten-4 right" href="#!">{process.env.NODE_ENV}Mode{process.env.REACT_APP_API_ENDPOINT}</a>
             </div>
           </div>
         </footer>
