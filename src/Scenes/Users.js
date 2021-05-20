@@ -6,7 +6,7 @@ function Users() {
   const [newUser, setNewUser] = useState({})
 
   useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('http://3.141.105.146:5000/users')
       .then((response) => response.json())
       .then((data) => setAllUsers(data))
       .catch((err) => console.log('This is error', err))
@@ -15,7 +15,7 @@ function Users() {
   console.log(newUser)
 
   function createUser() {
-    fetch('http://localhost:5000/signup', {
+    fetch('http://3.141.105.146:5000/signup', {
       method: 'Post',
       headers: {
         Accept: 'application/json',
