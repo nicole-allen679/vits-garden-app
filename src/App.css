@@ -1,8 +1,16 @@
 @import 'materialize-css';
 
-footer {
-  position: absolute; 
+.footer-container {
   bottom: 0;
   right: 0;
   left:0;
+  background-color: blueviolet;
+}
+.custom-container{
+  height: 100%;
+  padding: 5rem 2rem;
+}
+.nav-wrapper{
+  padding-left: 2rem;
+  background-color: blueviolet;
 }
